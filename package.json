@@ -1,14 +1,23 @@
 {
   "name": "rabbitmq",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "RabbitMQ Event-driven Architecture Example",
+  "main": "userService.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node userService.js",
+    "email": "node emailService.js",
+    "start": "node userService.js",
+    "publisher": "node publisher.js",
+    "subscriber": "node subscriber.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "rabbitmq",
+    "event-driven",
+    "nodejs"
+  ],
+  "author": "Ankit Bhandari",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "amqplib": "^0.10.9"
   }
